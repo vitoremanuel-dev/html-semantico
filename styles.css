@@ -1,53 +1,186 @@
 /* Reset básico */
 * {
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimentos padrão */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
 }
 
 /* Estilos gerais */
 body {
-    font-family: 'Inter', sans-serif; /* Define a família de fontes para o corpo do documento */
-    line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
-    color: #333; /* Cor do texto padrão */
+  font-family: "Inter", sans-serif; /* Define a família de fontes para o corpo do documento */
+  line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
+  color: #333; /* Cor do texto padrão */
+  background-color: #4c45b225;
 }
 
 .container {
-    width: 90%; /* Largura da container com 90% da largura do viewport */
-    max-width: 1200px; /* Largura máxima da container para telas maiores */
-    margin: 0 auto; /* Centraliza a container horizontalmente */
-    padding: 20px; /* Espaçamento interno da container */
+  margin: 0 auto; /* Centraliza a container horizontalmente */
+  padding: 0px 2rem;
 }
 
 .header {
-    background-color: #4C45B2; /* Cor de fundo do cabeçalho */
-    color: #fff; /* Cor do texto no cabeçalho */
-    padding: 10px 0; /* Espaçamento interno no cabeçalho */
-    text-align: center; /* Alinhamento do texto centralizado */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve abaixo do cabeçalho */
+  background-color: #4c45b2; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto no cabeçalho */
+  padding: 0px 10px 0px 0px; /* Espaçamento interno no cabeçalho */
+  text-align: center; /* Alinhamento do texto centralizado */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve abaixo do cabeçalho */
 }
 
 .header-title {
-    font-size: 3rem; /* Tamanho da fonte do título do cabeçalho */
-    font-weight: 700; /* Peso da fonte (negrito) */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    letter-spacing: 2px; /* Espaçamento entre letras */
-    margin-bottom: 10px; /* Margem inferior */
+  font-size: 3rem; /* Tamanho da fonte do título do cabeçalho */
+  font-weight: 700; /* Peso da fonte (negrito) */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  letter-spacing: 2px; /* Espaçamento entre letras */
 }
 
 .nav-list {
-    list-style-type: none; /* Remove o estilo padrão da lista */
-    text-align: center; /* Alinha os itens da lista centralizados */
-    margin-top: 20px; /* Margem superior */
+  list-style-type: none; /* Remove o estilo padrão da lista */
+  text-align: center; /* Alinha os itens da lista centralizados */
+  margin-top: 20px; /* Margem superior */
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
 }
 
 .nav-item {
-    display: inline-block; /* Exibe os itens da lista em linha */
-    margin-right: 20px; /* Margem direita entre os itens */
+  display: inline-block; /* Exibe os itens da lista em linha */
+  margin-right: 20px; /* Margem direita entre os itens */
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid white;
 }
 
 .nav-link {
-    color: #fff; /* Cor do texto dos links */
-    text-decoration: none; /* Remove decoração de texto nos links */
-    font-size: 1.2rem; /* Tamanho da fonte dos links */
-    transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+  color: #fff; /* Cor do texto dos links */
+  text-decoration: none; /* Remove decoração de texto nos links */
+  font-size: 1.2rem; /* Tamanho da fonte dos links */
+  transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.section-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.figure-img {
+  border-radius: 2rem;
+}
+
+.figure-caption {
+  font-style: italic;
+}
+
+.details-summary {
+  color: #fff;
+  background-color: #333;
+  padding-left: 1rem;
+  border-radius: 10px 10px 0px 0px;
+  cursor: pointer;
+}
+
+.details-content {
+  border: 1px solid #333;
+  padding: 1rem;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #fff;
+}
+
+.products {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.products article {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.products article:hover {
+    background-color: #7d79ad;
+    color: white;
+    transition: 0.5s;
+}
+.article {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.article-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+
+.article-description {
+  display: flex;
+  text-align: justify;
+}
+
+.section-blog article {
+  background-color: #fff;
+}
+
+.section-blog > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #b90202ba;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #4c45b2;
+  color: white;
+  height: 15rem;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contact {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.footer-copy {
+    margin-top: 2rem;
+    padding: 1rem;
 }
